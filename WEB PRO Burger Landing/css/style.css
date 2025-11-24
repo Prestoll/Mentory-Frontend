@@ -28,6 +28,9 @@ body {
 a {
     color: #fff;
 }
+img {
+    max-width: 100%;
+}
 .btn {
     display: flex;
     align-items: center;
@@ -44,6 +47,13 @@ a {
 
     transition: 0.6s;
 }
+
+.btn--small {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+}
+
 .btn:hover {
     opacity: 0.7;
 }
@@ -121,4 +131,175 @@ h1,h2,h3,h4,h5,,h6 {
 .welcome_container2{
     width: 550px;
 
+}
+
+/* Список еды */
+
+
+.food_list {
+    padding: 100px 0;
+}
+
+.food_list .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.food_list_card {
+    width: 260px;
+    background: #312f30;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.food_list_img {
+    width: 260px;
+    height: 175px;
+    object-fit: cover;
+
+}
+
+.food_text_container {
+    padding: 20px 15px;
+}
+
+.food_list_title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.food_list_text {
+font-weight: 400;
+font-size: 16px;
+text-align: center;
+opacity: 0.7;
+}
+
+/* Order */
+
+
+.order {
+    background: #312f30;
+    padding: 60px 0;
+}
+
+.order_burger {
+    min-width: 470px;
+}
+
+.order_text_container {
+    margin-right: 100px;
+    max-width: 370px;
+}
+
+.order .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order_title {
+    font-size: 44px;
+    margin-bottom: 25px;
+}
+
+.order_text {
+    font-weight: 400;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.order_price {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #f6762c;
+}
+
+.order_old_price {
+    margin-left: 4px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-decoration: line-through;
+    color: #f6762c;
+    opacity: 0.5;
+}
+
+.order .btn {
+    margin-top: 10px;
+}
+
+/* Product */
+
+.product {
+    padding: 150px 0;
+}
+
+.product .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.product_card {
+    width: 555px;
+    height: 300px;
+    padding: 60px 30px 60px 290px;
+    background-color: #322e30;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product_card:nth-child(even) {
+    padding-left: 30px;
+    padding-right: 290px;
+}
+
+.product_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product_text {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.product_price {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #f6762c;
+}
+
+.product_old_price {
+    margin-left: 4px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-decoration: line-through;
+    color: #f6762c;
+    opacity: 0.5;
+}
+
+.product .btn {
+    margin-top: 10px;
+}
+
+.card_queen {
+    background-image: url(../images/product-1.jpg);
+}
+
+.card_hut {
+    background-image: url(../images/product-2.jpg);
+}
+.card_king {
+    background-image: url(../images/product-3.jpg);
+}
+
+.card_papa {
+    background-image: url(../images/product-4.jpg);
 }
