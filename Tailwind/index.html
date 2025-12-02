@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Карточка — Tailwind (простой пример)</title>
+
+  <!-- Подключаем Tailwind. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+
+  <!-- Карточка -->
+  <article class="max-w-md w-full bg-white rounded-2xl shadow-lg overflow-hidden">
+    <img
+      src="https://ix-marketing.imgix.net/focalpoint.png?auto=format,compress&w=1946"
+      alt="Пример изображения карточки"
+      class="w-full h-48 object-cover"
+    />
+
+    <!-- Контент карточки: отступы внутри -->
+    <div class="p-6">
+      <!-- Заголовок -->
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Заголовок карточки</h2>
+
+      <!-- Описание -->
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        Короткое описание — что делает карточка, зачем она нужна. Пример текста,
+        чтобы показать как выглядит блок с контентом.
+      </p>
+
+      <!-- Метки -->
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs font-medium bg-blue-50 text-blue-600 px-2 py-1 rounded">Новинка</span>
+        <span class="text-xs font-medium bg-gray-50 text-gray-600 px-2 py-1 rounded">Руководство</span>
+      </div>
+
+      <!-- Кнопки -->
+      <div class="flex items-center justify-between">
+        <a href="#" class="inline-block px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition">
+          Узнать больше
+        </a>
+        <button aria-label="Добавить в избранное" class="p-2 rounded-full hover:bg-gray-100 transition">
+          <!-- Простая иконка сердца (svg) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-7.515a4 4 0 010-5.656z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </article>
+
+</body>
+</html>
